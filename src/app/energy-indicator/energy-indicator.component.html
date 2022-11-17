@@ -1,0 +1,19 @@
+<p>energy-indicator works!</p>
+<button mat-button class="btnT" (click)="changeTheme()">
+    Cambiar tema
+</button>
+
+<div class="rowCont">
+    <div class="w50 centered ">
+        <button (click)="changeEnergy(energy.id)" #energy id="energy" [ngClass]="!theme?'btnEnergy1':'btnEnergy2'">
+            <i class="fa-solid fa-power-off icon"></i>
+        </button>
+    </div>
+    <div class="w50 centered">
+        <button (click)="changeEnergy(flash.id)" #flash id="flash" [ngClass]="!theme?'btnEnergy1':'btnEnergy2'">
+        	<i id="flashIcon" class="fa-solid fa-bolt iconFlash">
+            </i>
+            <i id="inner" class="fa-solid fa-bolt"></i>
+        </button>
+    </div>
+</div>
