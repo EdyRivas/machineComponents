@@ -16,7 +16,7 @@
                             <app-temperature [idT]="'tempPast'"></app-temperature>
                         </div>
                         <div class="contElement">
-                            <app-pressure></app-pressure>
+                            <app-pressure [idP]="'pressPast'"></app-pressure>
                         </div>
                     </div>
                 </div>
@@ -31,10 +31,22 @@
                 </div>
                 <!-- #endregion -->
 
-
-                <div class="btnCont2">
+                <!-- #region element 2 deacrem -->
+                <div class="btnCont2" (click)="vertlDisp('display2')">
                 </div>
-
+                <div class="component2">
+                    <app-energy-indicator [idN]="'engDeacrem'"></app-energy-indicator>
+                </div>
+                <div id="display2" class="btnCont2Display">
+                    <div class="cont">
+                        <div class="w100 h100">
+                            <div class="imgCont">
+                                <img src="../../assets/images/background/descremador.jpeg" alt="" class="cuajo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- #endregion -->
 
                 <!-- #region element 3  estand-->
                 <div class="btnCont3" (click)="display('display3')"></div>
@@ -78,8 +90,25 @@
                 <!-- #endregion -->
 
 
-                <div class="btnCont5">
-                    <button class="btn">5</button>
+                <div class="btnCont5" (click)="display('display5')">
+                </div>
+                <div class="component5">
+                    <div class="compCont">
+                        <app-energy-indicator [idN]="'engSilo'"></app-energy-indicator>
+                    </div>
+                    <div class="compCont">
+                        <app-pressure [idP]="'pressSilo'"></app-pressure>
+                    </div>
+
+                </div>
+                <div id="display5" class="btnCont5Display">
+                    <div class="cont">
+                        <div class="w100 h100">
+                            <div class="imgCont">
+                                <img src="../../assets/images/background/silo.jpeg" alt="" class="w100">
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>

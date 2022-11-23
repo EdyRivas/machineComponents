@@ -112,7 +112,7 @@
     border-radius: 12px;
     background-color: white;
     border: #c8c8c8 1px solid;
-    display: flex;
+    display: none;
     overflow: hidden;
     justify-content: center;
     align-items: baseline;
@@ -135,6 +135,30 @@
     border: #384d61 2px solid;
     z-index: 2;
     background-position: center center;
+    background-image: url(../../assets/images/background/deacream.png);
+}
+
+.component2 {
+    position: absolute;
+    left: 214px;
+    bottom: 315px;
+}
+
+.btnCont2Display {
+    transition: all .3s ease;
+    position: absolute;
+    display: none;
+    left: 254px;
+    bottom: 370px;
+    width: 123px;
+    height: 0;
+    border-radius: 12px;
+    background-color: white;
+    border: #c8c8c8 1px solid;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
 }
 
 //#endregion
@@ -174,7 +198,7 @@
 }
 
 //#endregion
-//#region cont4
+//#region cont 4
 .btnCont4 {
     background-color: transparent;
     right: 70px;
@@ -222,12 +246,50 @@
 }
 
 //#endregion
+//#region cont 5
 .btnCont5 {
+    z-index: 2;
     background-color: transparent;
-    left: 8%;
-    top: 63%;
+    height: 242px;
+    width: 137px;
+    right: 639px;
+    bottom: 0;
+    border: #384d61 2px solid;
+    border-radius: 12px;
+    background-position: right center;
+    background-image: url(../../assets/images/background/siloIcon.png);
 }
 
+.component5 {
+    position: absolute;
+    right: 820px;
+    bottom: 120px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.compCont {
+    margin-left: 20px;
+}
+
+.btnCont5Display {
+    transition: all .3s ease;
+    position: absolute;
+    right: 768px;
+    bottom: 0px;
+    height: 236px;
+    width: 0;
+    border-radius: 12px;
+    background-color: white;
+    border: #c8c8c8 2px solid;
+    display: none;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+//#endregion
 .btn {
     width: 100%;
     height: 100%;

@@ -22,6 +22,8 @@ export class HomeComponent implements OnInit {
         setTimeout(() => {
           if (id == 'display4')
             display.style.width = '298px';
+          else if(id =='display5')
+            display.style.width = '189px';
           else
             display.style.width = '282px';
         }, 200);
@@ -36,6 +38,8 @@ export class HomeComponent implements OnInit {
         setTimeout(() => {
           if (id == 'display4')
             display.style.width = '298px';
+          else if(id =='display5')
+            display.style.width = '189px';
           else
             display.style.width = '282px';
         }, 200);
@@ -64,7 +68,10 @@ export class HomeComponent implements OnInit {
         display.style.display = 'flex'
         display.style.transform= 'scaleX(0)';
         setTimeout(() => {
-          display.style.height = '146px';
+          if (id == 'display')
+            display.style.height = '146px';
+          else 
+            display.style.height = '98px';
           display.style.transform= 'scaleX(1)';
         }, 200);
         this.lastVertical = id;
@@ -73,7 +80,10 @@ export class HomeComponent implements OnInit {
         display.style.display = 'flex'
         display.style.transform= 'scaleX(0)';
         setTimeout(() => {
-          display.style.height = '146px';
+          if (id == 'display')
+            display.style.height = '146px';
+          else 
+            display.style.height = '98px';
           display.style.transform= 'scaleX(1)';
         }, 200);
         this.lastVertical = id;

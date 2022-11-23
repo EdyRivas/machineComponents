@@ -1,4 +1,5 @@
 import { devOnlyGuardedExpression } from '@angular/compiler';
+import { Input } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 declare var $: any;
 @Component({
@@ -7,27 +8,31 @@ declare var $: any;
   styleUrls: ['./pressure.component.scss']
 })
 export class PressureComponent implements OnInit {
-
+ @Input() idP:string;
   constructor() { }
 
   ngOnInit(): void {
-this.deg()
+    setTimeout(() => {
+      this.deg(this.idP);
+      
+    }, 200);
   }
 clsPrev = '';
-delCls(){
-  let speed = document.getElementById('speed') as HTMLElement;
- if (this.clsPrev != ''){
-  speed.classList.remove(this.clsPrev);
-  this.clsPrev = '';
- }
+delCls(id:string){
+  let speed = document.getElementById(id) as HTMLElement;
+  if (this.clsPrev != ''){
+    speed.classList.remove(this.clsPrev);
+    this.clsPrev = '';
+  }
  else return;
 }
-deg():any{
-  let aux = document.getElementById('aux') as HTMLElement;
-  let speed = document.getElementById('speed') as HTMLElement;
-  let text = document.getElementById('text') as HTMLElement;
+// auto change degrees
+deg(id:string):any{
+  let aux = document.getElementById(id+'aux') as HTMLElement;
+  let speed = document.getElementById(id) as HTMLElement;
+  let text = document.getElementById(id+'text') as HTMLElement;
   let deg = Math.random() * 100;
-  this.delCls()
+  this.delCls(id)
 
   if(deg >=0 && deg <= 5 ){
     speed.classList.add('d_0')
@@ -81,9 +86,9 @@ deg():any{
   
 aux.click();
 }
-auxDeg(){
+auxDeg(id:string){
   setTimeout(() => {
-    this.deg()
+    this.deg(id)
   }, 500);
 }
 }

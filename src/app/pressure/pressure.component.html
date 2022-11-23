@@ -1,8 +1,8 @@
 <div class="flx w100">
-    <span id="speed" style="--r:0" class="speedometer"></span>
-    <h3 class="title" id="text"></h3>
+    <span [id]="idP" style="--r:0" class="speedometer"></span>
+    <h3 class="title" [id]="idP+'text'"></h3>
 </div>
 
 
 <!-- <button (click)="deg()"></button> -->
-<button hidden id="aux" (click)="auxDeg()"></button>
+<button hidden [id]="idP+'aux'" (click)="auxDeg(idP)"></button>
