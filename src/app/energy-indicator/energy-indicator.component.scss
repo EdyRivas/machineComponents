@@ -5,12 +5,12 @@
     outline: none;
     border-radius: 100%;
     color: white;
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.40);
+    box-shadow: 0px 0px 6px -1px rgba(0, 0, 0, 0.50);
     transition: all ease .3s;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -25,7 +25,7 @@
 
 .icon,
 .iconFlash {
-    scale: 4;
+    scale: 1;
     border-radius: 100%;
     padding: 1px;
     display: flex;
@@ -54,10 +54,10 @@
     align-items: center;
 }
 
-#inner {
+.eng {
     color: white;
     position: absolute;
-    scale: 3.85;
+    scale: 1;
     z-index: 12;
 }
 
@@ -160,27 +160,27 @@
 }
 
 @keyframes click {
-    from {
-        scale: 1;
-    }
-    30% {
-        scale: .89;
-        box-shadow: 0px 0px 4px 3px rgb(0 0 0 / 35%);
-    }
-    50% {
-        scale: 1.02;
-        box-shadow: 0px 0px 8px 4px rgb(0 0 0 / 25%);
-    }
-    70% {
-        scale: 1.04;
-        box-shadow: 0px 0px 10px 6px rgb(0 0 0 / 25%);
-    }
-    90% {
-        scale: 1.01;
-        box-shadow: 0px 0px 8px 4px rgb(0 0 0 / 30%);
-    }
-    to {
-        scale: 1;
-        box-shadow: 0px 0px 5px 3px rgb(0 0 0 / 35%);
-    }
+    // from {
+    //     scale: 1;
+    // }
+    // 30% {
+    //     scale: .89;
+    //     box-shadow: 0px 0px 4px 3px rgb(0 0 0 / 35%);
+    // }
+    // 50% {
+    //     scale: 1.02;
+    //     box-shadow: 0px 0px 8px 4px rgb(0 0 0 / 25%);
+    // }
+    // 70% {
+    //     scale: 1.04;
+    //     box-shadow: 0px 0px 10px 6px rgb(0 0 0 / 25%);
+    // }
+    // 90% {
+    //     scale: 1.01;
+    //     box-shadow: 0px 0px 8px 4px rgb(0 0 0 / 30%);
+    // }
+    // to {
+    //     scale: 1;
+    //     box-shadow: 0px 0px 5px 3px rgb(0 0 0 / 35%);
+    // }
 }

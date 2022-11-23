@@ -1,46 +1,57 @@
 <div class="cont">
-    <mat-card class="gen">
-        <div class="bacdrop">
+    <div class="over">
 
-            <div class="btnCont">
-                <button class="btn">1</button>
-            </div>
-            <div class="btnCont2">
-                <button class="btn">2</button>
-            </div>
-            <div class="btnCont3" (click)="display('display3')"></div>
-            <div id="display3" class="btnCont3Display">
-                <div class="w100 flx h100">
-                    <div class="w70">
-                        <app-energy-indicator class="mt"></app-energy-indicator>
-                        <app-temperature></app-temperature>
-                    </div>
-                    <div class="w30">
-                        <div class="imgCont2">
-                            <img src="" alt="" class="cuajo">
+
+        <mat-card class="gen">
+            <div class="bacdrop">
+
+                <div class="btnCont">
+                    <button class="btn">1</button>
+                </div>
+                <div class="btnCont2">
+                    <button class="btn">2</button>
+                </div>
+                <div class="btnCont3" (click)="display('display3')"></div>
+                <div id="display3" class="btnCont3Display">
+                    <div class="w100 flx h100">
+                        <div class="w70 flx jcAlc">
+                            <div>
+
+                                <div class="contComp">
+                                    <app-energy-indicator class="mt" [idN]="'engEst'"></app-energy-indicator>
+                                </div>
+                                <div class="contComp">
+                                    <app-temperature></app-temperature>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w30">
+                            <div class="imgCont2">
+                                <img src="../../assets/images/background/estand.jpeg" alt="" class="est">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="btnCont4" (click)="display('display4')">
-            </div>
-            <div id="display4" class="btnCont4Display">
-                <div class="cont">
-                    <div class="w100 h100">
-                        <div class="imgCont">
-                            <img src="" alt="" class="cuajo">
+                <div class="btnCont4" (click)="display('display4')">
+                </div>
+                <div id="display4" class="btnCont4Display">
+                    <div class="cont">
+                        <div class="w100 h100">
+                            <div class="imgCont">
+                                <img src="../../assets/images/background/cuajo.jpeg" alt="" class="cuajo">
+                            </div>
+
+                            <app-energy-indicator class="mt" [idN]="'engCuajo'"></app-energy-indicator>
+
                         </div>
-
-                        <app-energy-indicator class="mt"></app-energy-indicator>
-
                     </div>
                 </div>
-            </div>
-            <div class="btnCont5">
-                <button class="btn">5</button>
-            </div>
+                <div class="btnCont5">
+                    <button class="btn">5</button>
+                </div>
 
-        </div>
-    </mat-card>
+            </div>
+        </mat-card>
+    </div>
 </div>

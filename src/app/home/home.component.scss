@@ -7,7 +7,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    position: absolute;
     border-radius: 12px;
     padding: 0 !important;
     overflow: hidden;
@@ -198,4 +198,57 @@
 
 .w70 {
     width: 55%;
+}
+
+.over {
+    width: 1400px;
+    height: 800px;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all .3 ease;
+}
+
+.contComp {
+    margin: 20px 0;
+}
+
+.cuajo {
+    width: 100%;
+}
+
+.imgCont2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.est {
+    width: 90%;
+}
+
+@media only screen and (max-height: 800px) {
+    .over {
+        height: 700px !important;
+    }
+}
+
+@media only screen and (max-height: 700px) {
+    .over {
+        height: 600px !important;
+    }
+}
+
+@media only screen and (max-height: 600px) {
+    .over {
+        height: 500px !important;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .over {
+        width: 1000px !important;
+    }
 }

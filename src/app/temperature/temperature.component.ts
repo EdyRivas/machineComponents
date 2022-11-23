@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { _MatTabGroupBase } from '@angular/material/tabs';
 
 @Component({
   selector: 'app-temperature',
@@ -10,10 +11,12 @@ export class TemperatureComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    
+    this.tempChange()
   }
+
   danger:boolean = false;
   tempChange(){
+    let btnTemp = document.getElementById('btnTemp') as HTMLElement;
     let colorGrow = document.getElementById('colorGrow') as HTMLElement;
     let weather = document.getElementById('weather') as HTMLElement;
     let bubble = document.getElementById('bubble') as HTMLElement;
@@ -37,5 +40,11 @@ export class TemperatureComponent implements OnInit {
     else
     this.danger = true;
     // alert(x)
+    btnTemp.click()
+  }
+  temp(){
+    setTimeout(() => {
+      this.tempChange()
+    }, 1000);
   }
 }
