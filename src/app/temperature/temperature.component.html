@@ -1,0 +1,29 @@
+<div class="cont">
+    <div [ngClass]="danger?'on' : 'off'">
+        <div [ngClass]="danger?'shine' : 'shineOff'">
+            <div class="shiny"></div>
+        </div>
+    </div>
+    <div class="centered">
+        <!-- pipe area -->
+        <div class="tempPipe">
+            <!-- Pipe inside -->
+            <div class="pipe">
+                <div id="colorGrow" class="pipColor"></div>
+                <div class="messure"></div>
+                <!-- <div class="space"></div>space -->
+            </div>
+        </div>
+        <!-- bubble container -->
+        <div class="bubble">
+            <!-- BublesGlasses -->
+            <div class="bubbleInside">
+                <div id="bubble" class="bubColor"></div>
+            </div>
+            <!-- ----sparks area---- -->
+            <div class="spark"></div>
+        </div>
+    </div>
+    <h4 id="weather"></h4>
+</div>
+<button mat-button (click)="tempChange()">Cambiar temperatura</button>

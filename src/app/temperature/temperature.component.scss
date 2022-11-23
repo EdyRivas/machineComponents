@@ -1,0 +1,175 @@
+        * {
+            transition: all ease .6s
+        }
+        
+        .tempPipe {
+            height: 250px;
+            width: 45px;
+            background-color: #102b3f;
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+        }
+        
+        .bubble {
+            width: 90px;
+            height: 90px;
+            border-radius: 50px;
+            background-color: #102b3f;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #weather {
+            width: 10px;
+            margin: 0;
+            font-family: 'candara';
+            font-weight: 500;
+        }
+        
+        .cont {
+            // margin-top: 40px;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .centered {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap-reverse;
+            scale: .8;
+            margin-right: 12px;
+        }
+        
+        .pipe {
+            height: 73%;
+            width: 57%;
+            background-color: rgb(224, 240, 245);
+            z-index: 123;
+            border-radius: 20px;
+            overflow: hidden;
+            display: flex;
+            align-items: end;
+            position: relative;
+        }
+        
+        .space {
+            height: 20%;
+            width: 100%;
+        }
+        
+        .bubbleInside {
+            overflow: hidden;
+            height: 79%;
+            width: 79%;
+            z-index: 123;
+            border-radius: 50px;
+        }
+        
+        .bubColor {
+            width: 100%;
+            height: 100%;
+            background-color: rgb(45 117 182);
+            border-radius: 50px;
+            border-radius: 50px;
+        }
+        
+        .coverSpark {
+            width: 36px;
+            height: 39px;
+            background-color: rgb(45 117 182);
+            ;
+            border-radius: 50px;
+            position: absolute;
+            z-index: 123545;
+            top: 19px;
+            left: 33px;
+        }
+        
+        .pipColor {
+            height: 0%;
+            width: 131%;
+            background-color: rgb(45 117 182);
+            border-radius: 11px;
+        }
+        
+        .off,
+        .on {
+            width: 70px;
+            height: 70px;
+            scale: .5;
+            border-radius: 75px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(170, 57, 85, 0.548);
+            border: 5px solid rgb(19, 36, 59);
+        }
+        
+        .on {
+            background-color: rgb(207, 35, 78);
+            box-shadow: 0px 0px 40px 20px red;
+            animation: light-up 2s infinite ease-in-out;
+            border: 5px solid rgb(75, 17, 25);
+        }
+        
+        .shine,
+        .shineOff {
+            background-color: rgba(255, 255, 255, 0.445);
+            height: 20px;
+            width: 20px;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .shine {
+            animation: shine 2s infinite ease-in-out;
+        }
+        
+        .shiny {
+            width: 5px;
+            height: 5px;
+            border-radius: 50px;
+            background-color: rgba(255, 255, 255, 0.26);
+        }
+        
+        .messure {
+            height: 100%;
+            width: 100%;
+            background-color: transparent;
+            position: absolute;
+            background-image: url(../../assets/images/temperature/medidor.png);
+            background-position: right center;
+        }
+        /* glowing animation */
+        
+        @keyframes light-up {
+            0% {
+                box-shadow: 0px 0px 30px -4px rgb(231, 32, 75);
+            }
+            50% {
+                box-shadow: 0px 0px 30px 17px rgb(231, 32, 75);
+            }
+            100% {
+                box-shadow: 0px 0px 30px -4px rgb(231, 32, 75);
+            }
+        }
+        
+        @keyframes shine {
+            0% {
+                box-shadow: 0px 0px 30px 6px white;
+            }
+            50% {
+                box-shadow: 0px 0px 30px 8px white;
+            }
+            100% {
+                box-shadow: 0px 0px 30px 6px white;
+            }
+        }

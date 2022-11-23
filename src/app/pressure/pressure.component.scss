@@ -1,0 +1,68 @@
+.speedometer {
+    width: 40px;
+    height: 20px;
+    border-radius: 100px 100px 0 0;
+    border: 20px solid rgb(70, 84, 177);
+    border-bottom: none;
+    display: inline-block;
+    position: relative;
+    transition: all ease .6s;
+}
+
+.speedometer::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 37px;
+    background: #999999;
+    border-radius: 100% 100% 5px 5px;
+    left: calc(50% - 3px);
+    bottom: 3px;
+    transform-origin: bottom;
+    transform: rotate(calc(var(--r)*1.8deg - 90deg));
+    transition: all ease .6s;
+}
+
+.d_0 {
+    --r: 0 !important;
+}
+
+.d_10 {
+    --r: 10 !important;
+}
+
+.d_20 {
+    --r: 20 !important;
+}
+
+.d_30 {
+    --r: 30 !important;
+}
+
+.d_40 {
+    --r: 40 !important;
+}
+
+.d_50 {
+    --r: 50 !important;
+}
+
+.d_60 {
+    --r: 60 !important;
+}
+
+.d_70 {
+    --r: 70 !important;
+}
+
+.d_80 {
+    --r: 80 !important;
+}
+
+.d_90 {
+    --r: 90 !important;
+}
+
+.d_100 {
+    --r: 100 !important;
+}

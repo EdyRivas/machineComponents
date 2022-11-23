@@ -7,11 +7,17 @@ import { EnergyIndicatorComponent } from './energy-indicator/energy-indicator.co
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MaterialModule } from './material/material.module';
+import { TemperatureComponent } from './temperature/temperature.component';
+import { PressureComponent } from './pressure/pressure.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EnergyIndicatorComponent
+    EnergyIndicatorComponent,
+    TemperatureComponent,
+    PressureComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,46 @@
+<div class="cont">
+    <mat-card class="gen">
+        <div class="bacdrop">
+
+            <div class="btnCont">
+                <button class="btn">1</button>
+            </div>
+            <div class="btnCont2">
+                <button class="btn">2</button>
+            </div>
+            <div class="btnCont3" (click)="display('display3')"></div>
+            <div id="display3" class="btnCont3Display">
+                <div class="w100 flx h100">
+                    <div class="w70">
+                        <app-energy-indicator class="mt"></app-energy-indicator>
+                        <app-temperature></app-temperature>
+                    </div>
+                    <div class="w30">
+                        <div class="imgCont2">
+                            <img src="" alt="" class="cuajo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btnCont4" (click)="display('display4')">
+            </div>
+            <div id="display4" class="btnCont4Display">
+                <div class="cont">
+                    <div class="w100 h100">
+                        <div class="imgCont">
+                            <img src="" alt="" class="cuajo">
+                        </div>
+
+                        <app-energy-indicator class="mt"></app-energy-indicator>
+
+                    </div>
+                </div>
+            </div>
+            <div class="btnCont5">
+                <button class="btn">5</button>
+            </div>
+
+        </div>
+    </mat-card>
+</div>
