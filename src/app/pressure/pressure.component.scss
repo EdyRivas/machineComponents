@@ -1,8 +1,8 @@
 .speedometer {
-    width: 40px;
-    height: 20px;
+    width: 13px;
+    height: 13px;
     border-radius: 100px 100px 0 0;
-    border: 20px solid rgb(70, 84, 177);
+    border: 13px solid rgb(70, 84, 177);
     border-bottom: none;
     display: inline-block;
     position: relative;
@@ -12,8 +12,8 @@
 .speedometer::before {
     content: "";
     position: absolute;
-    width: 6px;
-    height: 37px;
+    width: 5px;
+    height: 20px;
     background: #999999;
     border-radius: 100% 100% 5px 5px;
     left: calc(50% - 3px);
@@ -21,6 +21,14 @@
     transform-origin: bottom;
     transform: rotate(calc(var(--r)*1.8deg - 90deg));
     transition: all ease .6s;
+}
+
+.title {
+    // margin: 0;
+    position: absolute;
+    right: -30px;
+    font-weight: 400;
+    font-size: 12px;
 }
 
 .d_0 {

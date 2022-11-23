@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { _MatTabGroupBase } from '@angular/material/tabs';
 
 @Component({
@@ -7,19 +7,19 @@ import { _MatTabGroupBase } from '@angular/material/tabs';
   styleUrls: ['./temperature.component.scss']
 })
 export class TemperatureComponent implements OnInit {
-
+  @Input() idT: string
   constructor() { }
 
   ngOnInit(): void {
-    this.tempChange()
+    this.temp(this.idT)
   }
 
   danger:boolean = false;
-  tempChange(){
-    let btnTemp = document.getElementById('btnTemp') as HTMLElement;
-    let colorGrow = document.getElementById('colorGrow') as HTMLElement;
-    let weather = document.getElementById('weather') as HTMLElement;
-    let bubble = document.getElementById('bubble') as HTMLElement;
+  tempChange(id:string){
+    let btnTemp = document.getElementById(id+'btnTemp') as HTMLElement;
+    let colorGrow = document.getElementById(id+'colorGrow') as HTMLElement;
+    let weather = document.getElementById(id+'weather') as HTMLElement;
+    let bubble = document.getElementById(id+'bubble') as HTMLElement;
     let x:number = Math.random() * 100;
     const formatter = new Intl.NumberFormat('en-US', {
       minimumFractionDigits: 0,
@@ -42,9 +42,9 @@ export class TemperatureComponent implements OnInit {
     // alert(x)
     btnTemp.click()
   }
-  temp(){
+  temp(id:string) {
     setTimeout(() => {
-      this.tempChange()
+      this.tempChange(id)
     }, 1000);
   }
 }

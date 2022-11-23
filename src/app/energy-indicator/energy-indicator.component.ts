@@ -32,23 +32,25 @@ export class EnergyIndicatorComponent implements OnInit {
       setTimeout(() => {
         button.style.animation ='click .5s normal';
       }, 10);
-      if(!this.theme){
+      // if(!this.theme){
+        // button.style.backgroundColor = "rgb(41 169 105)";
+        // button.style.borderColor = 'rgb(7 109 59)';
+
+      //   flashIcon.style.color='#2959ff';
+      //   flashIcon.classList.add('orb');
+      //   inner.style.textShadow = '0px 0px 1px #fff, 0 0 0 #000, 0px 0px 1px #fff';
+      //   inner.classList.add('light');
+      // }else{
+        // button.style.backgroundColor = "rgb(53, 81, 141)";
+        // button.style.borderColor = 'rgb(17, 44, 104)';
         button.style.backgroundColor = "rgb(41 169 105)";
         button.style.borderColor = 'rgb(7 109 59)';
-
-        flashIcon.style.color='#2959ff';
-        flashIcon.classList.add('orb');
-        inner.style.textShadow = '0px 0px 1px #fff, 0 0 0 #000, 0px 0px 1px #fff';
-        inner.classList.add('light');
-      }else{
-        button.style.backgroundColor = "rgb(53, 81, 141)";
-        button.style.borderColor = 'rgb(17, 44, 104)';
-      
+        
         flashIcon.style.color='#f3ff6c';
         flashIcon.classList.add('orb2');
         inner.style.textShadow = '0px 0px 1px #fff, 0 0 0 #000, 0px 0px 1px #fff';
         inner.classList.add('light');
-      }
+      // }
 
       this.clickFlash = true;
     }else{

@@ -9,7 +9,7 @@
         <div class="tempPipe">
             <!-- Pipe inside -->
             <div class="pipe">
-                <div id="colorGrow" class="pipColor"></div>
+                <div [id]="idT +'colorGrow'" class="pipColor"></div>
                 <div class="messure"></div>
                 <!-- <div class="space"></div>space -->
             </div>
@@ -18,12 +18,12 @@
         <div class="bubble">
             <!-- BublesGlasses -->
             <div class="bubbleInside">
-                <div id="bubble" class="bubColor"></div>
+                <div [id]="idT+'bubble'" class="bubColor"></div>
             </div>
             <!-- ----sparks area---- -->
             <div class="spark"></div>
         </div>
     </div>
-    <h4 id="weather"></h4>
+    <h4 class="weather" [id]="idT+'weather'"></h4>
 </div>
-<button id="btnTemp" hidden (click)="temp()">Cambiar temperatura</button>
+<button [id]="idT+'btnTemp'" hidden (click)="temp(idT)">Cambiar temperatura</button>
