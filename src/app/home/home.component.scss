@@ -359,6 +359,13 @@
     width: 90%;
 }
 
+.full {
+    height: 93%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media only screen and (max-height: 800px) {
     .over {
         height: 700px !important;

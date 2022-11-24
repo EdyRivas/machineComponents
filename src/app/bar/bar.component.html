@@ -9,12 +9,10 @@
         <div class="upBar">
 
             <button class="burgerBtn" mat-raised-button (click)="drawer.toggle()"><mat-icon>view_headline</mat-icon></button>
-            <div class="sidonCont">
-                <img src="../../assets/images/logos/sidon.jpeg" alt="" class="sidon">
-            </div>
-            <div class="logoCont">
+
+            <!-- <div class="logoCont">
                 <img src="../../assets/images/logos/logoEmpresa.jpeg" class="logo" alt="">
-            </div>
+            </div> -->
         </div>
         <router-outlet>
             <!-- <app-energy-indicator></app-energy-indicator> -->
@@ -22,7 +20,16 @@
             <!-- <app-pressure></app-pressure> -->
             <!-- <app-pressure></app-pressure> -->
             <!-- <app-table></app-table> -->
-
+            <div class="contMAinStat">
+                <div class="sidonCont">
+                    <div class="cont">
+                        <img src="../../assets/images/logos/sidon.svg" alt="" class="sidon">
+                    </div>
+                </div>
+                <div class="mainTxt">
+                    <p class="txt">Planta Inteligente</p>
+                </div>
+            </div>
             <app-home></app-home>
         </router-outlet>
 
