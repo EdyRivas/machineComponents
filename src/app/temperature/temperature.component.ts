@@ -45,6 +45,6 @@ export class TemperatureComponent implements OnInit {
   temp(id:string) {
     setTimeout(() => {
       this.tempChange(id)
-    }, 1000);
+    }, 7000);
   }
 }

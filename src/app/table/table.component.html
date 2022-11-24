@@ -1,0 +1,42 @@
+<div class="tableCont">
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+        <ng-container matColumnDef="elemento">
+            <th mat-header-cell *matHeaderCellDef>Elemento</th>
+            <td mat-cell *matCellDef="let element">{{ element.elemento }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="sensor">
+            <th mat-header-cell *matHeaderCellDef> Sensor</th>
+            <td mat-cell *matCellDef="let element">{{ element.sensor }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="ult_Med">
+            <th mat-header-cell *matHeaderCellDef>Ultima modificacion</th>
+            <td mat-cell *matCellDef="let element">{{ element.ult_Med }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="medicion">
+            <th mat-header-cell *matHeaderCellDef>Medicion</th>
+            <td mat-cell *matCellDef="let element">{{ element.medicion }}</td>
+
+        </ng-container>
+
+        <ng-container matColumnDef="estado">
+            <th mat-header-cell *matHeaderCellDef>Estado</th>
+            <td mat-cell *matCellDef="let element">
+                <div *ngIf="element.estado">
+                    OK
+                </div>
+                <div *ngIf="!element.estado">
+                    NO
+                </div>
+            </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+
+
+    </table>
+
+</div>

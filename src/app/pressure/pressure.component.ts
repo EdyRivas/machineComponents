@@ -89,7 +89,7 @@ aux.click();
 auxDeg(id:string){
   setTimeout(() => {
     this.deg(id)
-  }, 500);
+  }, 7000);
 }
 }
 

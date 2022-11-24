@@ -10,6 +10,8 @@ import { MaterialModule } from './material/material.module';
 import { TemperatureComponent } from './temperature/temperature.component';
 import { PressureComponent } from './pressure/pressure.component';
 import { HomeComponent } from './home/home.component';
+import { TableComponent } from './table/table.component';
+import { BarComponent } from './bar/bar.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { HomeComponent } from './home/home.component';
     EnergyIndicatorComponent,
     TemperatureComponent,
     PressureComponent,
-    HomeComponent
+    HomeComponent,
+    TableComponent,
+    BarComponent
   ],
   imports: [
     BrowserModule,

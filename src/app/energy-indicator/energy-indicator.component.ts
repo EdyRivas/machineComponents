@@ -73,6 +73,6 @@ export class EnergyIndicatorComponent implements OnInit {
   aux( id:string){
     setTimeout(() => {
       this.changeEnergy(id)
-    }, 3000);
+    }, 7000);
   }
 }
