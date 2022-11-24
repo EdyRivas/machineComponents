@@ -53,7 +53,16 @@ export class TableComponent implements OnInit {
     let estandData: PeriodicElement = {
       elemento: 'Estandarizador', sensor: 'Temperatura', ult_Med:  new Date().toLocaleString(), medicion: estTemp,estado: estBool};
     ELEMENT_DATA.push(estandData);
+
+    let fromIndex = ELEMENT_DATA.indexOf(estandData); 
+    let toIndex = 0;
+    
+    let element = ELEMENT_DATA.splice(fromIndex, 1)[0];
+    ELEMENT_DATA.splice(toIndex, 0, element);
+
     this.dataSource.data = ELEMENT_DATA;
+
+
     
     let past = document.getElementById('tempPastweather') as HTMLElement;
     let pastTemp = past.innerHTML;
@@ -63,6 +72,13 @@ export class TableComponent implements OnInit {
     let pastData: PeriodicElement = {
       elemento: 'Pasteurizador', sensor: 'Temperatura', ult_Med:  new Date().toLocaleString(), medicion: pastTemp,estado: patBool};
     ELEMENT_DATA.push(pastData);
+    
+    fromIndex = ELEMENT_DATA.indexOf(pastData); 
+    toIndex = 0;
+  
+    element = ELEMENT_DATA.splice(fromIndex, 1)[0];
+    ELEMENT_DATA.splice(toIndex, 0, element);
+    
     this.dataSource.data = ELEMENT_DATA;
 
     let pastSpeed = document.getElementById('pressPasttext') as HTMLElement;
@@ -73,6 +89,13 @@ export class TableComponent implements OnInit {
     let pastSData: PeriodicElement = {
       elemento: 'Pasteurizador', sensor: 'Presión', ult_Med:  new Date().toLocaleString(), medicion: pSpeed,estado: pSBool};
     ELEMENT_DATA.push(pastSData);
+    
+    fromIndex = ELEMENT_DATA.indexOf(pastSData); 
+    toIndex = 0;
+  
+    element = ELEMENT_DATA.splice(fromIndex, 1)[0];
+    ELEMENT_DATA.splice(toIndex, 0, element);
+    
     this.dataSource.data = ELEMENT_DATA;
 
     let silo = document.getElementById('pressSilotext') as HTMLElement;
@@ -83,6 +106,13 @@ export class TableComponent implements OnInit {
     let siloData: PeriodicElement = {
       elemento: 'Silos de leche', sensor: 'Temperatura', ult_Med:  new Date().toLocaleString(), medicion: siloSpeed,estado: pSBool};
     ELEMENT_DATA.push(siloData);
+    
+    fromIndex = ELEMENT_DATA.indexOf(siloData); 
+    toIndex = 0;
+  
+    element = ELEMENT_DATA.splice(fromIndex, 1)[0];
+    ELEMENT_DATA.splice(toIndex, 0, element);
+    
     this.dataSource.data = ELEMENT_DATA;
 
     aux.click()
