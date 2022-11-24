@@ -1,5 +1,5 @@
-<div class="tableCont">
-    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+<div class="tableCont flx jcAlc">
+    <table id="table" mat-table [dataSource]="dataSource" class="mat-elevation-z8">
         <ng-container matColumnDef="elemento">
             <th mat-header-cell *matHeaderCellDef>Elemento</th>
             <td mat-cell *matCellDef="let element">{{ element.elemento }}</td>
@@ -16,13 +16,13 @@
         </ng-container>
 
         <ng-container matColumnDef="medicion">
-            <th mat-header-cell *matHeaderCellDef>Medicion</th>
+            <th mat-header-cell *matHeaderCellDef class="sml">Medicion</th>
             <td mat-cell *matCellDef="let element">{{ element.medicion }}</td>
 
         </ng-container>
 
         <ng-container matColumnDef="estado">
-            <th mat-header-cell *matHeaderCellDef>Estado</th>
+            <th mat-header-cell *matHeaderCellDef class="sml">Estado</th>
             <td mat-cell *matCellDef="let element">
                 <div *ngIf="element.estado">
                     OK

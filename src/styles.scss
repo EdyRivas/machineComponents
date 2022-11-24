@@ -61,6 +61,7 @@ th {
     border-bottom: 1px solid white !important;
     text-align: center !important;
     width: 150px !important;
+    font-weight: 200px !important;
 }
 
 table th:last-child {
@@ -69,6 +70,7 @@ table th:last-child {
 
 tr {
     background-color: white;
+    height: 39px !important;
 }
 
 tr:nth-child(even) {
@@ -83,6 +85,11 @@ table {
     border-collapse: collapse;
     max-height: 500px;
     overflow: hidden;
+}
+
+tbody tr {
+    height: 20px !important;
+    font-size: 12px !important;
 }
 
 .tableCont {
