@@ -156,3 +156,27 @@ mat-toolbar {
     background-color: darkred !important;
     ;
 }
+
+.logoCont {
+    position: absolute;
+    right: 10px;
+    top: 2px;
+}
+
+.logo {
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+}
+
+.sidonCont {
+    position: absolute;
+    left: 42.5%;
+    top: 5px;
+}
+
+.sidon {
+    height: 40px;
+    width: 100%;
+    object-fit: cover;
+}
